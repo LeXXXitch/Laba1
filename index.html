@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lehichland</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .container{
+        max-width: 1000px;
+        margin: auto;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+        background-color: #B0C4DE;  
+    }
+    
+    h1, h2, h4, h5, h6{
+        padding: 0px 20px 0px 20px;
+    }
+
+    header{
+        background-color: #4682B4;
+    }
+
+    .logo{
+        height: 40px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    header nav a{
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    header nav a:hover{
+        color: skyblue;
+    }
+
+    section{
+        border: 1px solid rgb(206, 199, 199);;
+        padding: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        background-color: #f0ffff ;
+    }
+
+    .footer_section{
+        padding: 15px;
+    }
+
+    .post_header{
+        display: flex;
+        width: 90%;
+        margin-bottom: 5px;
+        padding: 0px 10px 5px 10px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .post_header--name{
+        padding: 10px 10px 10px 20px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    main{
+        float: left;
+        width: 70%;
+        padding: 10px 15px 15px 15px;
+        
+    }
+
+    main p{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        padding: 5px 20px 5px 20px;
+    }
+    .post_image{
+        width: 70%;
+        border-radius: 15px;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .post__author-picture{
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+                
+    }
+    
+
+    .video--section{
+        width: 80%;
+        position: relative;
+        padding: 5px 20px 5px 20px;
+        height: 300px ;
+    }
+
+    .video--section iframe{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        height: 95%;
+        width: 100%;
+        padding: 5px 20px 0px 20px;
+        
+        
+    }
+
+    aside{
+        float: right;
+        width: 25%;
+        background-color: #f0ffff;
+        
+    }
+
+    aside p{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        padding:  10px 20px 20px 20px;
+        background-color: #f0ffff;
+    }
+
+    .aside_image{
+        width: 85%;
+        padding: 20px;
+    }
+    
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4682B4;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo-footer{
+        height: 35px;
+        padding: 5px 0px 0px 10px;
+       
+    }
+
+    footer p, a{
+        color: #fff;
+        padding: 0px 10px 5px 10px;
+        text-decoration: none;
+    }
+
+    footer a:hover{
+        color: skyblue;
+    }
+
+     
+   .post_footer{
+     width: 90%;
+     display:inline-flex;
+     justify-content: space-between;
+     align-items: center;
+     border-top: 1px solid #f0f0f0; 
+     padding: 0px 0px 0px 15px;
+     font-size: 15px;
+    }
+   .post_footer--item{
+     font-size: 15px;
+     display:flex;
+     padding: 10px;
+     padding-bottom: 10px;
+   }
+
+   .post_footer--item:hover{
+       color: rgb(177, 189, 183);
+   }
+
+    .post_footer--img{
+      height: 20px;
+      margin-right: 20px;
+    }
+
+   .post_footer__author-login{ 
+      font-size: 15px;
+      color: #696969;
+    }
+
+    .post_footer__author-login:hover{
+        color: rgb(24, 26, 25);
+    }
+
+
+    @media(max-width: 700px){
+        main{
+            float: none;
+            width: 100%;
+        }
+
+        aside{
+            float: none;
+            width: 100%;
+            padding: 20px;
+        }
+    }
+
+
+</style>
+</head>
+<body> 
+    <div class="container">
+        <header>
+            
+            <nav>
+                <img class="logo" src="kappa.png" >
+                <a href="#home">Главная</a>
+                <a href="#comunity">Сообщества</a>
+                <a href="#users">Пользователи</a>
+                <a href="#news">Новости</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                
+                <div class="post_header">
+                <img class="post__author-picture" src="https://yt3.ggpht.com/ytc/AKedOLSeNnEpj56F4oB9d8y6_MaJPcGK5f0q4HM9YLkV=s900-c-k-c0x00ffffff-no-rj"/>
+                </div>
+                <p>Всем дарова! Всем привет!</p>
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="like.png" class="post_footer--img"/> 
+                      2 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      1
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="comment.png" class="post_footer--img"/> 
+                      3
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@kekec</div>
+                     </div>
+                        
+                </div>
+            </section>
+            
+
+            <section>
+                <div class="post_header">
+                    <img class="post__author-picture" src="https://yt3.ggpht.com/ytc/AAUvwnhHgCrAxFyH2Vzk3cUOHVL9YPC1io715LwsMOfbxA=s900-c-k-c0x00ffffff-no-rj"/>
+                </div>
+                <p>Я скажу то, что для тебя не новость. Мир не такой уж солнечный и приветливый. Это очень опасное, жёсткое место. И если только дашь слабину, он опрокинет с такой силой тебя, что больше уже не встанешь. Ни ты, ни я, никто на свете не бьёт так сильно, как жизнь. Совсем не важно, как ты ударишь, а важно, КАКОЙ ДЕРЖИШЬ УДАР, как двигаешься вперёд. Будешь идти — ИДИ, если с испугу не свернёшь. Только так побеждают! Если знаешь, чего ты стОишь, иди и бери своё, но будь готов удары держать, а не плакаться и говорить: «Я ничего не добился из-за него, из-за неё, из-за кого-то»! Так делают трУсы, а ты не трус! Быть этого не может! …я всегда буду тебя любить, что бы ни случилось. Ты мой сын — плоть от плоти, самое дорогое, что у меня есть. Но пока ты не поверишь в себя, жизни не будет.
+                </p>
+               
+                <img class="post_image" src="https://cs8.pikabu.ru/post_img/2016/05/30/9/og_og_1464621565212132974.jpg"/>
+        
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="like.png" class="post_footer--img"/> 
+                      7 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      6
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="comment.png" class="post_footer--img"/> 
+                      4
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@tambu</div>
+                     </div>
+                        
+                </div>
+            </section>
+
+
+            <section>
+                <div class="post_header">
+                    <img class="post__author-picture" src="https://o-krohe.ru/images/article/orig/2018/11/smeh-da-i-tolko-v-amsterdame-nashli-otlichiya-mezhdu-detskim-i-vzroslym-smehom.jpg"/>
+                </div>
+                <div class="video--section">
+                  <iframe width="852" height="639" src="https://www.youtube.com/embed/LetnF6tCEZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="like.png" class="post_footer--img"/> 
+                      3 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      2
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="comment.png" class="post_footer--img"/> 
+                      1
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@memblog</div>
+                     </div>
+                        
+                </div>
+            </section>
+            
+
+            <section>
+                <div class="post_header">
+                    <img class="post__author-picture" src="https://i.pinimg.com/originals/cb/67/ae/cb67ae097197c7775457b45cdbe741f7.jpg"/>
+                </div>
+                <p>Я в своем познании настолько преисполнился, что я как будто бы уже сто триллионов миллиардов лет проживаю на триллионах и триллионах таких же планет, как эта Земля, мне этот мир абсолютно понятен, и я здесь ищу только одного - покоя, умиротворения и вот этой гармонии, от слияния с бесконечно вечным, от созерцания великого фрактального подобия и от вот этого замечательного всеединства существа, бесконечно вечного, куда ни посмотри, хоть вглубь - бесконечно малое, хоть ввысь - бесконечное большое, понимаешь? </p>
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="like.png" class="post_footer--img"/> 
+                      5 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      2
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="comment.png" class="post_footer--img"/> 
+                      3
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@Idushiykreke</div>
+                     </div>
+                        
+                </div>
+            </section>
+            
+
+            <section>
+                <div class="post_header">
+                    <img class="post__author-picture" src="https://i.ytimg.com/vi/lGA96DXXuZw/maxresdefault.jpg"/>
+                </div>
+                <p>Чел ты...</p>
+                <div class="post_footer">
+                    <div class="post_footer--item">
+                      <img src="like.png" class="post_footer--img"/> 
+                      5 
+                      </div>
+                    <div class="post_footer--item">
+                      <img src="repost.png" class="post_footer--img"/> 
+                      9
+                       </div>
+                    <div class="post_footer--item"> 
+                      <img src="comment.png" class="post_footer--img"/> 
+                      4
+                     </div>
+                     <div class="post_footer--item">
+                     <div class="post_footer__author-login">@Lehich</div>
+                     </div>
+                        
+                </div>
+            </section>
+            
+        </main>
+
+        <aside>
+            <h3 style="padding: 20px 20px 0px 20px;">Здесь могла бы быть ваша реклама</h3>
+            <img class="aside_image" src="https://cdn.dotablast.com/wp-content/uploads/2015/06/solo-dota-2.jpg" alt="">
+            
+            <h3 style="padding: 0px 20px 0px 20px;">AdBlock</h3>
+            <p>Lehichland the best website ever.</p>
+        </aside>
+
+        <footer>
+            <div class="footer_section">
+                <a href="#text">Поддержка</a>
+                <a href="#text">О нас</a>
+                <a href="#newpost">Создать</a>
+                <a href="#notifications">Уведомления 8</a>
+                <img class="logo-footer" src="kappa.png" >
+            </div>
+            <p>Made by Alex Nenashev P3269</p>
+        </footer>
+
+    </div>    
+</body>
+</html>
